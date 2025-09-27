@@ -11,10 +11,11 @@ export default function Hero() {
 
       <div className="mx-auto max-w-7xl px-6 py-16 md:py-24 grid gap-12 md:grid-cols-2 items-center">
         <div>
-          <h1 className="text-3xl md:text-5xl font-semibold tracking-tight text-slate-900 fade-up">
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-[#02F3EB]/80" />
+          <h1 className="text-3xl md:text-5xl font-semibold tracking-tight text-gra fade-up">
             Votre santé, notre priorité
           </h1>
-          <p className="mt-4 text-slate-700 text-base md:text-lg max-w-prose fade-up" style={{animationDelay:'120ms'}}>
+          <p className="mt-4 text-gray-400 text-base md:text-lg max-w-prose fade-up" style={{animationDelay:'120ms'}}>
             Prenez rendez-vous en quelques clics avec le médecin le plus adapté.
             Notre assistant IA vous guide selon vos symptômes et l&apos;urgence.
           </p>
@@ -38,7 +39,7 @@ export default function Hero() {
         </div>
         <div className="relative">
           <div className="relative aspect-[4/3] w-full max-w-xl mx-auto rounded-xl shadow-lg ring-1 ring-slate-200 overflow-hidden fade-up" style={{animationDelay:'180ms'}}>
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 to-blue-400/80" />
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-[#02F3EB]/80" />
             <div className="absolute inset-0 grid place-items-center">
               <div className="text-white text-center">
                 <div className="text-5xl font-semibold">+24</div>

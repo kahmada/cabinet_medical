@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":["file:///goinfre/kahmada/cabinet/src/lib/prisma.ts"],"sourcesContent":["import { PrismaClient } from \"@prisma/client\";\n\nconst globalForPrisma = global as unknown as { prisma: PrismaClient | undefined };\n\nexport const prisma =\n  globalForPrisma.prisma ??\n  new PrismaClient({\n    log: [\"error\", \"warn\"],\n  });\n\nif (process.env.NODE_ENV !== \"production\") globalForPrisma.prisma = prisma;\n"],"names":[],"mappings":";;;;AAAA;;AAEA,MAAM;AAEC,MAAM,SACX,gBAAgB,MAAM,IACtB,IAAI,6IAAY,CAAC;IACf,KAAK;QAAC;QAAS;KAAO;AACxB;AAEF,wCAA2C,gBAAgB,MAAM,GAAG","debugId":null}},
+    {"offset": {"line": 79, "column": 0}, "map": {"version":3,"sources":["file:///goinfre/kahmada/cabinet/src/app/api/locations/route.ts"],"sourcesContent":["import { prisma } from \"@/lib/prisma\";\nimport { NextResponse } from \"next/server\";\n\nexport async function GET() {\n  const locations = await prisma.location.findMany({ \n    orderBy: { city: \"asc\" },\n    include: {\n      _count: {\n        select: { doctors: true }\n      }\n    }\n  });\n  return NextResponse.json(locations);\n}\n"],"names":[],"mappings":";;;;AAAA;AACA;;;AAEO,eAAe;IACpB,MAAM,YAAY,MAAM,gIAAM,CAAC,QAAQ,CAAC,QAAQ,CAAC;QAC/C,SAAS;YAAE,MAAM;QAAM;QACvB,SAAS;YACP,QAAQ;gBACN,QAAQ;oBAAE,SAAS;gBAAK;YAC1B;QACF;IACF;IACA,OAAO,gJAAY,CAAC,IAAI,CAAC;AAC3B","debugId":null}}]
+}

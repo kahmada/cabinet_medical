@@ -54,7 +54,7 @@ async function main() {
         degrees: "MD, DES Cardiologie",
         bio: "Cardiologue spécialisée en prévention cardiovasculaire et suivi des pathologies cardiaques chroniques.",
         locationId: locations[0].id,
-        photoUrl: "/doctors/dr-martin.jpg",
+        photoUrl: "/m1.jpeg",
         specialties: { connect: [{ id: specialties[0].id }] }, // Cardiologie
       },
     }),
@@ -66,7 +66,7 @@ async function main() {
         degrees: "MD, DES Dermatologie",
         bio: "Dermatologue expérimenté, spécialisé dans la prise en charge de l'acné, l'eczéma et le dépistage du cancer de la peau.",
         locationId: locations[0].id,
-        photoUrl: "/doctors/dr-bernard.jpg",
+        photoUrl: "/m2.jpeg",
         specialties: { connect: [{ id: specialties[1].id }] }, // Dermatologie
       },
     }),
@@ -78,7 +78,7 @@ async function main() {
         degrees: "MD, Pédiatrie",
         bio: "Pédiatre bienveillante, spécialisée dans le suivi des nourrissons, enfants et adolescents.",
         locationId: locations[0].id,
-        photoUrl: "/doctors/dr-lopez.jpg",
+        photoUrl: "/f1.jpeg",
         specialties: { connect: [{ id: specialties[2].id }] }, // Pédiatrie
       },
     }),
@@ -92,7 +92,7 @@ async function main() {
         degrees: "MD, Médecine Générale",
         bio: "Médecin généraliste expérimenté, consultation générale et médecine préventive.",
         locationId: locations[1].id,
-        photoUrl: "/doctors/dr-dubois.jpg",
+        photoUrl: "/m3.webp",
         specialties: { connect: [{ id: specialties[3].id }] }, // Généraliste
       },
     }),
@@ -104,7 +104,7 @@ async function main() {
         degrees: "MD, DES Cardiologie",
         bio: "Cardiologue interventionnelle, spécialisée dans les pathologies coronariennes et l'insuffisance cardiaque.",
         locationId: locations[1].id,
-        photoUrl: "/doctors/dr-rousseau.jpg",
+        photoUrl: "/f2.jpeg",
         specialties: { connect: [{ id: specialties[0].id }] }, // Cardiologie
       },
     }),
@@ -118,7 +118,7 @@ async function main() {
         degrees: "MD, DES Dermatologie",
         bio: "Dermatologue spécialisé en dermatologie esthétique et médicale, traitement des maladies de peau.",
         locationId: locations[2].id,
-        photoUrl: "/doctors/dr-moreau.jpg",
+        photoUrl: "/f3.webp",
         specialties: { connect: [{ id: specialties[1].id }] }, // Dermatologie
       },
     }),

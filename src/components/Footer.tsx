@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-slate-50">
+    <footer className="border-t border-slate-200 bg-[#02F3EB]">
       <div className="mx-auto max-w-7xl px-6 py-10 grid gap-8 md:grid-cols-4 text-sm text-slate-600">
         <div className="col-span-2">
           <div className="font-semibold text-slate-900 text-lg mb-2">
-            <span className="text-blue-600">Medi</span>Care
+            <span className="text-white">Medi</span>Care
           </div>
           <p className="max-w-md">
             Cabinet médical moderne proposant rendez-vous intelligents, téléconsultation
