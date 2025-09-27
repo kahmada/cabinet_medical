@@ -1,0 +1,82 @@
+// Prisma schema for medical practice
+// Database provider can be set via env var DATABASE_URL
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Specialty {
+  id        Int       @id @default(autoincrement())
+  name      String    @unique
+  doctors   Doctor[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model Location {
+  id        Int       @id @default(autoincrement())
+  name      String
+  address   String
+  city      String
+  country   String
+  doctors   Doctor[]
+}
+
+model Doctor {
+  id            Int         @id @default(autoincrement())
+  firstName     String
+  lastName      String
+  photoUrl      String?
+  experienceYrs Int         @default(0)
+  degrees       String?
+  bio           String?
+  specialties   Specialty[]
+  location      Location?   @relation(fields: [locationId], references: [id])
+  locationId    Int?
+  slots         Slot[]
+  appointments  Appointment[]
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+model Patient {
+  id        Int       @id @default(autoincrement())
+  email     String    @unique
+  phone     String?
+  firstName String
+  lastName  String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  appointments Appointment[]
+}
+
+model Slot {
+  id        Int       @id @default(autoincrement())
+  doctor    Doctor    @relation(fields: [doctorId], references: [id])
+  doctorId  Int
+  start     DateTime
+  end       DateTime
+  booked    Boolean   @default(false)
+  appointment Appointment?
+  @@index([doctorId, start])
+}
+
+model Appointment {
+  id          Int       @id @default(autoincrement())
+  patient     Patient   @relation(fields: [patientId], references: [id])
+  patientId   Int
+  doctor      Doctor    @relation(fields: [doctorId], references: [id])
+  doctorId    Int
+  slot        Slot      @relation(fields: [slotId], references: [id])
+  slotId      Int       @unique
+  reason      String
+  urgency     String    // "routine" | "prioritaire" | "urgence"
+  scheduledAt DateTime
+  status      String    @default("confirmé") // "confirmé" | "annulé" | "terminé"
+  createdAt   DateTime  @default(now())
+}
