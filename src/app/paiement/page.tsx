@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 type PaymentMethod = "card" | "paypal" | "bank" | "apple";
 
@@ -79,7 +80,7 @@ export default function PaiementPage() {
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <span className="text-xl">💳</span>
+                      <Image src="/visa.png" alt="Visa" width={32} height={32} className="object-contain" />
                       <div>
                         <div className="font-medium">Carte bancaire</div>
                         <div className="text-sm text-slate-600">Visa, Mastercard</div>
@@ -96,7 +97,7 @@ export default function PaiementPage() {
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <span className="text-xl">📱</span>
+                      <Image src="/pypal.png" alt="PayPal" width={32} height={32} className="object-contain" />
                       <div>
                         <div className="font-medium">PayPal</div>
                         <div className="text-sm text-slate-600">Compte PayPal</div>
@@ -113,7 +114,7 @@ export default function PaiementPage() {
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <span className="text-xl">🍎</span>
+                      <Image src="/app.png" alt="Apple Pay" width={32} height={32} className="object-contain" />
                       <div>
                         <div className="font-medium">Apple Pay</div>
                         <div className="text-sm text-slate-600">Touch ID, Face ID</div>
@@ -130,7 +131,7 @@ export default function PaiementPage() {
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <span className="text-xl">🏦</span>
+                      <Image src="/vi.png" alt="Virement bancaire" width={32} height={32} className="object-contain" />
                       <div>
                         <div className="font-medium">Virement bancaire</div>
                         <div className="text-sm text-slate-600">IBAN requis</div>
@@ -229,7 +230,9 @@ export default function PaiementPage() {
               {/* PayPal */}
               {paymentMethod === "paypal" && (
                 <div className="text-center py-8">
-                  <div className="text-6xl mb-4">📱</div>
+                  <div className="mb-4">
+                    <Image src="/pypal.png" alt="PayPal" width={64} height={64} className="mx-auto object-contain" />
+                  </div>
                   <h3 className="text-lg font-medium text-slate-900 mb-2">
                     Paiement PayPal
                   </h3>
@@ -249,7 +252,9 @@ export default function PaiementPage() {
               {/* Apple Pay */}
               {paymentMethod === "apple" && (
                 <div className="text-center py-8">
-                  <div className="text-6xl mb-4">🍎</div>
+                  <div className="mb-4">
+                    <Image src="/app.png" alt="Apple Pay" width={64} height={64} className="mx-auto object-contain" />
+                  </div>
                   <h3 className="text-lg font-medium text-slate-900 mb-2">
                     Apple Pay
                   </h3>
@@ -270,7 +275,9 @@ export default function PaiementPage() {
               {paymentMethod === "bank" && (
                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
                   <div className="text-center mb-4">
-                    <div className="text-4xl mb-2">🏦</div>
+                    <div className="mb-2">
+                      <Image src="/vi.png" alt="Virement bancaire" width={48} height={48} className="mx-auto object-contain" />
+                    </div>
                     <h3 className="text-lg font-medium text-slate-900">
                       Paiement par virement
                     </h3>

@@ -1,5 +1,31 @@
 import { prisma } from "@/lib/prisma";
 
+// Photos disponibles
+const availablePhotos = [
+  "/f1.jpeg",
+  "/f2.jpeg", 
+  "/f3.webp",
+  "/m1.jpeg",
+  "/m2.jpeg",
+  "/m3.webp"
+];
+
+// Fonction pour mélanger un tableau (algorithme Fisher-Yates)
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+// Fonction pour obtenir une photo aléatoire
+function getRandomPhoto(): string {
+  const randomIndex = Math.floor(Math.random() * availablePhotos.length);
+  return availablePhotos[randomIndex];
+}
+
 async function main() {
   // Specialties
   const specialties = await prisma.$transaction([
@@ -43,7 +69,7 @@ async function main() {
     }),
   ]);
 
-  // Doctors
+  // Doctors avec photos aléatoires
   const doctors = await prisma.$transaction([
     // Paris Centre
     prisma.doctor.create({
@@ -54,7 +80,7 @@ async function main() {
         degrees: "MD, DES Cardiologie",
         bio: "Cardiologue spécialisée en prévention cardiovasculaire et suivi des pathologies cardiaques chroniques.",
         locationId: locations[0].id,
-        photoUrl: "/m1.jpeg",
+        photoUrl: getRandomPhoto(),
         specialties: { connect: [{ id: specialties[0].id }] }, // Cardiologie
       },
     }),
@@ -66,7 +92,7 @@ async function main() {
         degrees: "MD, DES Dermatologie",
         bio: "Dermatologue expérimenté, spécialisé dans la prise en charge de l'acné, l'eczéma et le dépistage du cancer de la peau.",
         locationId: locations[0].id,
-        photoUrl: "/m2.jpeg",
+        photoUrl: getRandomPhoto(),
         specialties: { connect: [{ id: specialties[1].id }] }, // Dermatologie
       },
     }),
@@ -78,7 +104,7 @@ async function main() {
         degrees: "MD, Pédiatrie",
         bio: "Pédiatre bienveillante, spécialisée dans le suivi des nourrissons, enfants et adolescents.",
         locationId: locations[0].id,
-        photoUrl: "/f1.jpeg",
+        photoUrl: getRandomPhoto(),
         specialties: { connect: [{ id: specialties[2].id }] }, // Pédiatrie
       },
     }),
@@ -92,7 +118,7 @@ async function main() {
         degrees: "MD, Médecine Générale",
         bio: "Médecin généraliste expérimenté, consultation générale et médecine préventive.",
         locationId: locations[1].id,
-        photoUrl: "/m3.webp",
+        photoUrl: getRandomPhoto(),
         specialties: { connect: [{ id: specialties[3].id }] }, // Généraliste
       },
     }),
@@ -104,7 +130,7 @@ async function main() {
         degrees: "MD, DES Cardiologie",
         bio: "Cardiologue interventionnelle, spécialisée dans les pathologies coronariennes et l'insuffisance cardiaque.",
         locationId: locations[1].id,
-        photoUrl: "/f2.jpeg",
+        photoUrl: getRandomPhoto(),
         specialties: { connect: [{ id: specialties[0].id }] }, // Cardiologie
       },
     }),
@@ -118,7 +144,7 @@ async function main() {
         degrees: "MD, DES Dermatologie",
         bio: "Dermatologue spécialisé en dermatologie esthétique et médicale, traitement des maladies de peau.",
         locationId: locations[2].id,
-        photoUrl: "/f3.webp",
+        photoUrl: getRandomPhoto(),
         specialties: { connect: [{ id: specialties[1].id }] }, // Dermatologie
       },
     }),
@@ -130,7 +156,7 @@ async function main() {
         degrees: "MD, Pédiatrie",
         bio: "Pédiatre passionnée, consultations de suivi, vaccination et urgences pédiatriques.",
         locationId: locations[2].id,
-        photoUrl: "/doctors/dr-petit.jpg",
+        photoUrl: getRandomPhoto(),
         specialties: { connect: [{ id: specialties[2].id }] }, // Pédiatrie
       },
     }),
@@ -142,7 +168,7 @@ async function main() {
         degrees: "MD, Médecine Générale",
         bio: "Médecin généraliste senior, médecine familiale et gériatrie.",
         locationId: locations[2].id,
-        photoUrl: "/doctors/dr-leroy.jpg",
+        photoUrl: getRandomPhoto(),
         specialties: { connect: [{ id: specialties[3].id }] }, // Généraliste
       },
     }),

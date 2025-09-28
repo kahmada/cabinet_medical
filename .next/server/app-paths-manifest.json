@@ -1,7 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/api/appointments/route": "app/api/appointments/route.js",
-  "/api/chat/route": "app/api/chat/route.js",
   "/api/doctors/route": "app/api/doctors/route.js",
   "/api/locations/route": "app/api/locations/route.js",
   "/api/slots/route": "app/api/slots/route.js",
