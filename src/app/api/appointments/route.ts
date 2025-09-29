@@ -1,6 +1,7 @@
 import { prisma } from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
+import bcrypt from "bcryptjs";
 
 const CreateAppointmentSchema = z.object({
   patient: z.object({
@@ -33,12 +34,18 @@ export async function POST(req: NextRequest) {
     // Upsert patient by email
     const dbPatient = await prisma.patient.upsert({
       where: { email: patient.email },
-      update: { phone: patient.phone, firstName: patient.firstName, lastName: patient.lastName },
+      update: { 
+        phone: patient.phone, 
+        firstName: patient.firstName, 
+        lastName: patient.lastName 
+      },
       create: {
         email: patient.email,
         phone: patient.phone,
         firstName: patient.firstName,
         lastName: patient.lastName,
+        // Générer un mot de passe temporaire pour les patients créés via RDV
+        password: await bcrypt.hash(Math.random().toString(36).slice(-8), 10),
       },
     });
 

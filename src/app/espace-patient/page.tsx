@@ -46,30 +46,35 @@ export default function EspacePatientPage() {
     confirmPassword: ""
   });
 
-  // Simuler une authentification (en production, vous utiliseriez une vraie API)
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setError(null);
 
-    // Simulation d'un appel API
-    setTimeout(() => {
-      if (formData.email === "demo.patient@medicare.fr") {
-        const mockPatient: Patient = {
-          id: 1,
-          email: "demo.patient@medicare.fr",
-          firstName: "Demo",
-          lastName: "Patient",
-          phone: "+33123456789"
-        };
-        setPatient(mockPatient);
+    try {
+      const response = await fetch("/api/auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          password: formData.password,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setPatient(data.patient);
         setIsLoggedIn(true);
         
-        // Simuler des rendez-vous
+        // TODO: Charger les vrais rendez-vous du patient
+        // Pour l'instant, on garde les données de démonstration
         const mockAppointments: Appointment[] = [
           {
             id: 1,
-            scheduledAt: "2025-09-28T10:00:00",
+            scheduledAt: "2025-09-30T10:00:00",
             reason: "Consultation de contrôle",
             urgency: "routine",
             status: "confirmé",
@@ -79,33 +84,21 @@ export default function EspacePatientPage() {
               specialties: [{ name: "Cardiologie" }]
             },
             slot: {
-              start: "2025-09-28T10:00:00",
-              end: "2025-09-28T10:30:00"
-            }
-          },
-          {
-            id: 2,
-            scheduledAt: "2025-10-15T14:30:00",
-            reason: "Suivi traitement",
-            urgency: "routine",
-            status: "confirmé",
-            doctor: {
-              firstName: "Hugo",
-              lastName: "Bernard",
-              specialties: [{ name: "Dermatologie" }]
-            },
-            slot: {
-              start: "2025-10-15T14:30:00",
-              end: "2025-10-15T15:00:00"
+              start: "2025-09-30T10:00:00",
+              end: "2025-09-30T10:30:00"
             }
           }
         ];
         setAppointments(mockAppointments);
       } else {
-        setError("Email ou mot de passe incorrect");
+        setError(data.error || "Erreur de connexion");
       }
+    } catch (error) {
+      console.error("Erreur de connexion:", error);
+      setError("Erreur de connexion au serveur");
+    } finally {
       setLoading(false);
-    }, 1000);
+    }
   };
 
   const handleRegister = async (e: React.FormEvent) => {
@@ -119,12 +112,44 @@ export default function EspacePatientPage() {
       return;
     }
 
-    // Simulation d'inscription
-    setTimeout(() => {
-      setError("Inscription réalisée avec succès ! Vous pouvez maintenant vous connecter.");
-      setLoginMode("login");
+    try {
+      const response = await fetch("/api/auth/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          password: formData.password,
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          phone: formData.phone || undefined,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setError("Inscription réalisée avec succès ! Vous pouvez maintenant vous connecter.");
+        setLoginMode("login");
+        // Réinitialiser le formulaire
+        setFormData({
+          email: formData.email, // Garder l'email pour faciliter la connexion
+          password: "",
+          firstName: "",
+          lastName: "",
+          phone: "",
+          confirmPassword: ""
+        });
+      } else {
+        setError(data.error || "Erreur lors de l'inscription");
+      }
+    } catch (error) {
+      console.error("Erreur d'inscription:", error);
+      setError("Erreur de connexion au serveur");
+    } finally {
       setLoading(false);
-    }, 1000);
+    }
   };
 
   const handleLogout = () => {
@@ -313,7 +338,7 @@ export default function EspacePatientPage() {
             <div className="text-sm text-blue-800">
               <strong>Compte de démonstration :</strong><br />
               Email: demo.patient@medicare.fr<br />
-              Mot de passe: n'importe lequel
+              Mot de passe: demo123
             </div>
           </div>
 

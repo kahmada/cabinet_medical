@@ -1,4 +1,5 @@
 import { prisma } from "@/lib/prisma";
+import bcrypt from "bcryptjs";
 
 // Photos disponibles
 const availablePhotos = [
@@ -207,6 +208,7 @@ async function main() {
   }
 
   // Demo patient
+  const hashedPassword = await bcrypt.hash("demo123", 10);
   await prisma.patient.upsert({
     where: { email: "demo.patient@medicare.fr" },
     update: {},
@@ -215,6 +217,7 @@ async function main() {
       phone: "+33123456789",
       firstName: "Demo",
       lastName: "Patient",
+      password: hashedPassword,
     },
   });
 

@@ -50,6 +50,7 @@ model Patient {
   phone     String?
   firstName String
   lastName  String
+  password  String    // Champ pour le mot de passe hashé
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
   appointments Appointment[]
