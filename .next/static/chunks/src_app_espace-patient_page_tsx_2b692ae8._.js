@@ -717,28 +717,75 @@ function EspacePatientPage() {
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "text-sm text-slate-600",
                                                                 children: [
-                                                                    "📅 ",
-                                                                    appointmentDate.toLocaleDateString('fr-FR', {
-                                                                        weekday: 'long',
-                                                                        year: 'numeric',
-                                                                        month: 'long',
-                                                                        day: 'numeric'
-                                                                    }),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex items-center gap-1 mb-1",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                                className: "w-4 h-4 text-blue-600",
+                                                                                fill: "currentColor",
+                                                                                viewBox: "0 0 20 20",
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                    fillRule: "evenodd",
+                                                                                    d: "M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z",
+                                                                                    clipRule: "evenodd"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                                    lineNumber: 458,
+                                                                                    columnNumber: 31
+                                                                                }, this)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                                lineNumber: 457,
+                                                                                columnNumber: 29
+                                                                            }, this),
+                                                                            appointmentDate.toLocaleDateString('fr-FR', {
+                                                                                weekday: 'long',
+                                                                                year: 'numeric',
+                                                                                month: 'long',
+                                                                                day: 'numeric'
+                                                                            })
+                                                                        ]
+                                                                    }, void 0, true, {
                                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                        lineNumber: 462,
+                                                                        lineNumber: 456,
                                                                         columnNumber: 27
                                                                     }, this),
-                                                                    "🕐 ",
-                                                                    appointmentDate.toLocaleTimeString('fr-FR', {
-                                                                        hour: '2-digit',
-                                                                        minute: '2-digit'
-                                                                    }),
-                                                                    " - ",
-                                                                    new Date(appointment.slot.end).toLocaleTimeString('fr-FR', {
-                                                                        hour: '2-digit',
-                                                                        minute: '2-digit'
-                                                                    })
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex items-center gap-1",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                                className: "w-4 h-4 text-blue-600",
+                                                                                fill: "currentColor",
+                                                                                viewBox: "0 0 20 20",
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                    fillRule: "evenodd",
+                                                                                    d: "M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z",
+                                                                                    clipRule: "evenodd"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                                    lineNumber: 469,
+                                                                                    columnNumber: 31
+                                                                                }, this)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                                lineNumber: 468,
+                                                                                columnNumber: 29
+                                                                            }, this),
+                                                                            appointmentDate.toLocaleTimeString('fr-FR', {
+                                                                                hour: '2-digit',
+                                                                                minute: '2-digit'
+                                                                            }),
+                                                                            " - ",
+                                                                            new Date(appointment.slot.end).toLocaleTimeString('fr-FR', {
+                                                                                hour: '2-digit',
+                                                                                minute: '2-digit'
+                                                                            })
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                        lineNumber: 467,
+                                                                        columnNumber: 27
+                                                                    }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
@@ -753,7 +800,7 @@ function EspacePatientPage() {
                                                                         children: "Modifier"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                        lineNumber: 474,
+                                                                        lineNumber: 483,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -761,13 +808,13 @@ function EspacePatientPage() {
                                                                         children: "Annuler"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                        lineNumber: 477,
+                                                                        lineNumber: 486,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 473,
+                                                                lineNumber: 482,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
@@ -805,22 +852,51 @@ function EspacePatientPage() {
                                                 children: "Paiements & Factures"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 493,
+                                                lineNumber: 502,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 href: "/paiement",
-                                                className: "px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 transition inline-block",
-                                                children: "💳 Nouveau paiement"
-                                            }, void 0, false, {
+                                                className: "px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 transition inline-block flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                        className: "w-4 h-4",
+                                                        fill: "currentColor",
+                                                        viewBox: "0 0 20 20",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                lineNumber: 508,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                fillRule: "evenodd",
+                                                                d: "M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z",
+                                                                clipRule: "evenodd"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                lineNumber: 509,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                        lineNumber: 507,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    "Nouveau paiement"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 494,
+                                                lineNumber: 503,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                        lineNumber: 492,
+                                        lineNumber: 501,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -839,7 +915,7 @@ function EspacePatientPage() {
                                                                         children: "Consultation Dr. Martin"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                        lineNumber: 507,
+                                                                        lineNumber: 520,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -847,13 +923,13 @@ function EspacePatientPage() {
                                                                         children: "27 septembre 2025 - Cardiologie"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                        lineNumber: 508,
+                                                                        lineNumber: 521,
                                                                         columnNumber: 21
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 506,
+                                                                lineNumber: 519,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -864,7 +940,7 @@ function EspacePatientPage() {
                                                                         children: "65,00 €"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                        lineNumber: 511,
+                                                                        lineNumber: 524,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -872,19 +948,19 @@ function EspacePatientPage() {
                                                                         children: "En attente"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                        lineNumber: 512,
+                                                                        lineNumber: 525,
                                                                         columnNumber: 21
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 510,
+                                                                lineNumber: 523,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 505,
+                                                        lineNumber: 518,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -896,7 +972,7 @@ function EspacePatientPage() {
                                                                 children: "Payer maintenant"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 516,
+                                                                lineNumber: 529,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -904,19 +980,19 @@ function EspacePatientPage() {
                                                                 children: "Voir facture"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 522,
+                                                                lineNumber: 535,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 515,
+                                                        lineNumber: 528,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 504,
+                                                lineNumber: 517,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -934,77 +1010,12 @@ function EspacePatientPage() {
                                                                             children: "Consultation Dr. Bernard"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                            lineNumber: 533,
-                                                                            columnNumber: 23
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "text-sm text-slate-600",
-                                                                            children: "15 septembre 2025 - Dermatologie"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                            lineNumber: 534,
-                                                                            columnNumber: 23
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                    lineNumber: 532,
-                                                                    columnNumber: 21
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "text-right",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "font-semibold text-green-700",
-                                                                            children: "70,00 €"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                            lineNumber: 537,
-                                                                            columnNumber: 23
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "text-xs text-green-600",
-                                                                            children: "✓ Payé"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                            lineNumber: 538,
-                                                                            columnNumber: 23
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                    lineNumber: 536,
-                                                                    columnNumber: 21
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                            lineNumber: 531,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 530,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "p-4 border border-green-200 bg-green-50 rounded-lg",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex items-center justify-between",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "font-medium text-slate-900",
-                                                                            children: "Consultation Dr. Dubois"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
                                                                             lineNumber: 546,
                                                                             columnNumber: 23
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                             className: "text-sm text-slate-600",
-                                                                            children: "08 septembre 2025 - Médecine générale"
+                                                                            children: "15 septembre 2025 - Dermatologie"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/espace-patient/page.tsx",
                                                                             lineNumber: 547,
@@ -1021,16 +1032,36 @@ function EspacePatientPage() {
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                             className: "font-semibold text-green-700",
-                                                                            children: "55,00 €"
+                                                                            children: "70,00 €"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/espace-patient/page.tsx",
                                                                             lineNumber: 550,
                                                                             columnNumber: 23
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "text-xs text-green-600",
-                                                                            children: "✓ Payé"
-                                                                        }, void 0, false, {
+                                                                            className: "text-xs text-green-600 flex items-center gap-1 justify-end",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                                    className: "w-3 h-3",
+                                                                                    fill: "currentColor",
+                                                                                    viewBox: "0 0 20 20",
+                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                        fillRule: "evenodd",
+                                                                                        d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z",
+                                                                                        clipRule: "evenodd"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                                        lineNumber: 553,
+                                                                                        columnNumber: 27
+                                                                                    }, this)
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                                    lineNumber: 552,
+                                                                                    columnNumber: 25
+                                                                                }, this),
+                                                                                "Payé"
+                                                                            ]
+                                                                        }, void 0, true, {
                                                                             fileName: "[project]/src/app/espace-patient/page.tsx",
                                                                             lineNumber: 551,
                                                                             columnNumber: 23
@@ -1051,17 +1082,102 @@ function EspacePatientPage() {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
                                                         lineNumber: 543,
                                                         columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "p-4 border border-green-200 bg-green-50 rounded-lg",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex items-center justify-between",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "font-medium text-slate-900",
+                                                                            children: "Consultation Dr. Dubois"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                            lineNumber: 564,
+                                                                            columnNumber: 23
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "text-sm text-slate-600",
+                                                                            children: "08 septembre 2025 - Médecine générale"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                            lineNumber: 565,
+                                                                            columnNumber: 23
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                    lineNumber: 563,
+                                                                    columnNumber: 21
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-right",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "font-semibold text-green-700",
+                                                                            children: "55,00 €"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                            lineNumber: 568,
+                                                                            columnNumber: 23
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "text-xs text-green-600 flex items-center gap-1 justify-end",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                                    className: "w-3 h-3",
+                                                                                    fill: "currentColor",
+                                                                                    viewBox: "0 0 20 20",
+                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                                        fillRule: "evenodd",
+                                                                                        d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z",
+                                                                                        clipRule: "evenodd"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                                        lineNumber: 571,
+                                                                                        columnNumber: 27
+                                                                                    }, this)
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                                    lineNumber: 570,
+                                                                                    columnNumber: 25
+                                                                                }, this),
+                                                                                "Payé"
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                            lineNumber: 569,
+                                                                            columnNumber: 23
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                    lineNumber: 567,
+                                                                    columnNumber: 21
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                            lineNumber: 562,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                        lineNumber: 561,
+                                                        columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 529,
+                                                lineNumber: 542,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                        lineNumber: 502,
+                                        lineNumber: 515,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1072,7 +1188,7 @@ function EspacePatientPage() {
                                                 children: "Moyens de paiement acceptés"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 560,
+                                                lineNumber: 583,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1081,120 +1197,191 @@ function EspacePatientPage() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "flex items-center gap-2",
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-blue-600",
-                                                                children: "💳"
-                                                            }, void 0, false, {
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                className: "w-4 h-4 text-blue-600",
+                                                                fill: "currentColor",
+                                                                viewBox: "0 0 20 20",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                        d: "M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                        lineNumber: 587,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                        fillRule: "evenodd",
+                                                                        d: "M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z",
+                                                                        clipRule: "evenodd"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                        lineNumber: 588,
+                                                                        columnNumber: 21
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 563,
+                                                                lineNumber: 586,
                                                                 columnNumber: 19
                                                             }, this),
                                                             "Carte bancaire"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 562,
+                                                        lineNumber: 585,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "flex items-center gap-2",
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-green-600",
-                                                                children: "🏦"
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                className: "w-4 h-4 text-green-600",
+                                                                fill: "currentColor",
+                                                                viewBox: "0 0 20 20",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                    fillRule: "evenodd",
+                                                                    d: "M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm7 5a1 1 0 10-2 0v1H8a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V9z",
+                                                                    clipRule: "evenodd"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                    lineNumber: 594,
+                                                                    columnNumber: 21
+                                                                }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 567,
+                                                                lineNumber: 593,
                                                                 columnNumber: 19
                                                             }, this),
                                                             "Virement"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 566,
+                                                        lineNumber: 592,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "flex items-center gap-2",
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-purple-600",
-                                                                children: "📱"
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                className: "w-4 h-4 text-purple-600",
+                                                                fill: "currentColor",
+                                                                viewBox: "0 0 20 20",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                    d: "M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                    lineNumber: 600,
+                                                                    columnNumber: 21
+                                                                }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 571,
+                                                                lineNumber: 599,
                                                                 columnNumber: 19
                                                             }, this),
                                                             "PayPal"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 570,
+                                                        lineNumber: 598,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "flex items-center gap-2",
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-orange-600",
-                                                                children: "🍎"
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                                className: "w-4 h-4 text-orange-600",
+                                                                fill: "currentColor",
+                                                                viewBox: "0 0 20 20",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                    d: "M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                    lineNumber: 606,
+                                                                    columnNumber: 21
+                                                                }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 575,
+                                                                lineNumber: 605,
                                                                 columnNumber: 19
                                                             }, this),
                                                             "Apple Pay"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 574,
+                                                        lineNumber: 604,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 561,
+                                                lineNumber: 584,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                        lineNumber: 559,
+                                        lineNumber: 582,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                lineNumber: 491,
+                                lineNumber: 500,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                                 className: "bg-white border border-slate-200 rounded-lg p-6",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-xl font-semibent text-slate-900 mb-4",
+                                        className: "text-xl font-semibold text-slate-900 mb-4",
                                         children: "Historique Médical"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                        lineNumber: 584,
+                                        lineNumber: 616,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "text-center py-8 text-slate-500",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "mb-2",
-                                                children: "📋"
+                                                className: "mb-2 flex justify-center",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    className: "w-8 h-8",
+                                                    fill: "currentColor",
+                                                    viewBox: "0 0 20 20",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                            d: "M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                            lineNumber: 620,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                            fillRule: "evenodd",
+                                                            d: "M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z",
+                                                            clipRule: "evenodd"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                            lineNumber: 621,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                    lineNumber: 619,
+                                                    columnNumber: 17
+                                                }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 586,
+                                                lineNumber: 618,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: "Aucun document disponible"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 587,
+                                                lineNumber: 624,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1202,19 +1389,19 @@ function EspacePatientPage() {
                                                 children: "Vos comptes-rendus de consultation apparaîtront ici"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 588,
+                                                lineNumber: 625,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                        lineNumber: 585,
+                                        lineNumber: 617,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                lineNumber: 583,
+                                lineNumber: 615,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -1234,7 +1421,7 @@ function EspacePatientPage() {
                                         children: "Mon Profil"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                        lineNumber: 599,
+                                        lineNumber: 636,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1247,7 +1434,7 @@ function EspacePatientPage() {
                                                         children: "Email"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 602,
+                                                        lineNumber: 639,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1255,13 +1442,13 @@ function EspacePatientPage() {
                                                         children: patient === null || patient === void 0 ? void 0 : patient.email
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 603,
+                                                        lineNumber: 640,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 601,
+                                                lineNumber: 638,
                                                 columnNumber: 15
                                             }, this),
                                             (patient === null || patient === void 0 ? void 0 : patient.phone) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1271,7 +1458,7 @@ function EspacePatientPage() {
                                                         children: "Téléphone"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 607,
+                                                        lineNumber: 644,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1279,19 +1466,19 @@ function EspacePatientPage() {
                                                         children: patient.phone
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 608,
+                                                        lineNumber: 645,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 606,
+                                                lineNumber: 643,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                        lineNumber: 600,
+                                        lineNumber: 637,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1299,24 +1486,24 @@ function EspacePatientPage() {
                                         children: "Modifier mes informations"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                        lineNumber: 612,
+                                        lineNumber: 649,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                lineNumber: 598,
+                                lineNumber: 635,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "bg-white border border-slate-200 rounded-lg p-6",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "font-semibent text-slate-900 mb-4",
+                                        className: "font-semibold text-slate-900 mb-4",
                                         children: "Services Rapides"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                        lineNumber: 619,
+                                        lineNumber: 656,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1326,12 +1513,22 @@ function EspacePatientPage() {
                                                 href: "/rendez-vous",
                                                 className: "flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 transition",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-blue-600",
-                                                        children: "📅"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                        className: "w-5 h-5 text-blue-600",
+                                                        fill: "currentColor",
+                                                        viewBox: "0 0 20 20",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                            fillRule: "evenodd",
+                                                            d: "M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z",
+                                                            clipRule: "evenodd"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                            lineNumber: 663,
+                                                            columnNumber: 19
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 625,
+                                                        lineNumber: 662,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1341,7 +1538,7 @@ function EspacePatientPage() {
                                                                 children: "Prendre RDV"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 627,
+                                                                lineNumber: 666,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1349,31 +1546,41 @@ function EspacePatientPage() {
                                                                 children: "Réserver un créneau"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 628,
+                                                                lineNumber: 667,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 626,
+                                                        lineNumber: 665,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 621,
+                                                lineNumber: 658,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 href: "/chatbot",
                                                 className: "flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 transition",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-blue-600",
-                                                        children: "🤖"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                        className: "w-5 h-5 text-blue-600",
+                                                        fill: "currentColor",
+                                                        viewBox: "0 0 20 20",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                            fillRule: "evenodd",
+                                                            d: "M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z",
+                                                            clipRule: "evenodd"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                            lineNumber: 676,
+                                                            columnNumber: 19
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 636,
+                                                        lineNumber: 675,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1383,7 +1590,7 @@ function EspacePatientPage() {
                                                                 children: "Assistant IA"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 638,
+                                                                lineNumber: 679,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1391,30 +1598,40 @@ function EspacePatientPage() {
                                                                 children: "Aide aux symptômes"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 639,
+                                                                lineNumber: 680,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 637,
+                                                        lineNumber: 678,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 632,
+                                                lineNumber: 671,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center gap-3 p-3 border border-slate-200 rounded-lg opacity-50",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-slate-400",
-                                                        children: "📄"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                        className: "w-5 h-5 text-slate-400",
+                                                        fill: "currentColor",
+                                                        viewBox: "0 0 20 20",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                            fillRule: "evenodd",
+                                                            d: "M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z",
+                                                            clipRule: "evenodd"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                            lineNumber: 686,
+                                                            columnNumber: 19
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 644,
+                                                        lineNumber: 685,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1424,7 +1641,7 @@ function EspacePatientPage() {
                                                                 children: "Certificats"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 646,
+                                                                lineNumber: 689,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1432,31 +1649,50 @@ function EspacePatientPage() {
                                                                 children: "Bientôt disponible"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 647,
+                                                                lineNumber: 690,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 645,
+                                                        lineNumber: 688,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 643,
+                                                lineNumber: 684,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 href: "/paiement",
                                                 className: "flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 transition",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-blue-600",
-                                                        children: "💳"
-                                                    }, void 0, false, {
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                        className: "w-5 h-5 text-blue-600",
+                                                        fill: "currentColor",
+                                                        viewBox: "0 0 20 20",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                lineNumber: 699,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                fillRule: "evenodd",
+                                                                d: "M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z",
+                                                                clipRule: "evenodd"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                lineNumber: 700,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 655,
+                                                        lineNumber: 698,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1466,7 +1702,7 @@ function EspacePatientPage() {
                                                                 children: "Paiement en ligne"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 657,
+                                                                lineNumber: 703,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1474,30 +1710,40 @@ function EspacePatientPage() {
                                                                 children: "Régler vos consultations"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 658,
+                                                                lineNumber: 704,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 656,
+                                                        lineNumber: 702,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 651,
+                                                lineNumber: 694,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center gap-3 p-3 border border-slate-200 rounded-lg opacity-50",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-slate-400",
-                                                        children: "💬"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                        className: "w-5 h-5 text-slate-400",
+                                                        fill: "currentColor",
+                                                        viewBox: "0 0 20 20",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                            fillRule: "evenodd",
+                                                            d: "M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z",
+                                                            clipRule: "evenodd"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                            lineNumber: 710,
+                                                            columnNumber: 19
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 663,
+                                                        lineNumber: 709,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1507,7 +1753,7 @@ function EspacePatientPage() {
                                                                 children: "Téléconsultation"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 665,
+                                                                lineNumber: 713,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1515,42 +1761,42 @@ function EspacePatientPage() {
                                                                 children: "Bientôt disponible"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                                lineNumber: 666,
+                                                                lineNumber: 714,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                        lineNumber: 664,
+                                                        lineNumber: 712,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 662,
+                                                lineNumber: 708,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                        lineNumber: 620,
+                                        lineNumber: 657,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                lineNumber: 618,
+                                lineNumber: 655,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "bg-blue-50 border border-blue-200 rounded-lg p-6",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "font-semibent text-slate-900 mb-4",
+                                        className: "font-semibold text-slate-900 mb-4",
                                         children: "Besoin d'aide ?"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                        lineNumber: 674,
+                                        lineNumber: 722,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1558,46 +1804,111 @@ function EspacePatientPage() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 href: "/contact",
-                                                className: "block text-blue-600 hover:text-blue-700",
-                                                children: "📞 Contacter le cabinet"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2 text-blue-600 hover:text-blue-700",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                        className: "w-4 h-4",
+                                                        fill: "currentColor",
+                                                        viewBox: "0 0 20 20",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                            d: "M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                            lineNumber: 726,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                        lineNumber: 725,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    "Contacter le cabinet"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 676,
+                                                lineNumber: 724,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 href: "/urgences",
-                                                className: "block text-blue-600 hover:text-blue-700",
-                                                children: "🚨 Guide des urgences"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2 text-blue-600 hover:text-blue-700",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                        className: "w-4 h-4",
+                                                        fill: "currentColor",
+                                                        viewBox: "0 0 20 20",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                            fillRule: "evenodd",
+                                                            d: "M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z",
+                                                            clipRule: "evenodd"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                            lineNumber: 732,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                        lineNumber: 731,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    "Guide des urgences"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 679,
+                                                lineNumber: 730,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-slate-600",
-                                                children: "📧 support@medicare.fr"
-                                            }, void 0, false, {
+                                                className: "flex items-center gap-2 text-slate-600",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                        className: "w-4 h-4",
+                                                        fill: "currentColor",
+                                                        viewBox: "0 0 20 20",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                lineNumber: 738,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                                lineNumber: 739,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/espace-patient/page.tsx",
+                                                        lineNumber: 737,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    "support@medicare.fr"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                                lineNumber: 682,
+                                                lineNumber: 736,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                                        lineNumber: 675,
+                                        lineNumber: 723,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/espace-patient/page.tsx",
-                                lineNumber: 673,
+                                lineNumber: 721,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/espace-patient/page.tsx",
-                        lineNumber: 596,
+                        lineNumber: 633,
                         columnNumber: 9
                     }, this)
                 ]

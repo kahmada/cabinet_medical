@@ -348,9 +348,26 @@ function MedecinsPage() {
                                         columnNumber: 17
                                     }, this),
                                     doctor.location && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-xs text-slate-500 mb-3",
+                                        className: "text-xs text-slate-500 mb-3 flex items-center gap-1",
                                         children: [
-                                            "📍 ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                className: "w-3 h-3",
+                                                fill: "currentColor",
+                                                viewBox: "0 0 20 20",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                    fillRule: "evenodd",
+                                                    d: "M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z",
+                                                    clipRule: "evenodd"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/medecins/page.tsx",
+                                                    lineNumber: 221,
+                                                    columnNumber: 23
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/medecins/page.tsx",
+                                                lineNumber: 220,
+                                                columnNumber: 21
+                                            }, this),
                                             doctor.location.name,
                                             ", ",
                                             doctor.location.city
@@ -368,7 +385,7 @@ function MedecinsPage() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/medecins/page.tsx",
-                                        lineNumber: 224,
+                                        lineNumber: 227,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -380,7 +397,7 @@ function MedecinsPage() {
                                                 children: "Prendre RDV"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/medecins/page.tsx",
-                                                lineNumber: 230,
+                                                lineNumber: 233,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -389,13 +406,13 @@ function MedecinsPage() {
                                                 children: "Profil"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/medecins/page.tsx",
-                                                lineNumber: 236,
+                                                lineNumber: 239,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/medecins/page.tsx",
-                                        lineNumber: 229,
+                                        lineNumber: 232,
                                         columnNumber: 17
                                     }, this)
                                 ]
@@ -426,7 +443,7 @@ function MedecinsPage() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/medecins/page.tsx",
-                lineNumber: 251,
+                lineNumber: 254,
                 columnNumber: 9
             }, this)
         ]

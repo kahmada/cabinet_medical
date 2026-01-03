@@ -24,7 +24,7 @@ const services = [
         description: "Prise en charge complète des pathologies cardiovasculaires : prévention, diagnostic et traitement des maladies du cœur et des vaisseaux.",
         price: "80-120€",
         duration: "30-45 min",
-        icon: "❤️",
+        icon: "/m1.jpeg",
         procedures: [
             "Électrocardiogramme (ECG)",
             "Échocardiographie",
@@ -49,7 +49,7 @@ const services = [
         description: "Diagnostic et traitement des maladies de la peau, des cheveux et des ongles. Dermatologie médicale et esthétique.",
         price: "70-100€",
         duration: "20-30 min",
-        icon: "🔬",
+        icon: "/m2.jpeg",
         procedures: [
             "Consultation dermatologique",
             "Dépistage cancer de la peau",
@@ -99,7 +99,7 @@ const services = [
         description: "Prise en charge globale du patient et de sa famille. Prévention, diagnostic et traitement des pathologies courantes.",
         price: "25-50€",
         duration: "15-30 min",
-        icon: "🩺",
+        icon: "/m3.webp",
         procedures: [
             "Consultation générale",
             "Renouvellement d'ordonnances",

@@ -93,7 +93,11 @@ export default function ContactPage() {
               <div className="space-y-4">
                 {/* Adresse */}
                 <div className="flex items-start gap-3">
-                  <div className="text-blue-600 mt-1">📍</div>
+                  <div className="text-blue-600 mt-1">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
                   <div>
                     <div className="font-medium text-slate-900">Adresse</div>
                     <div className="text-slate-600">{currentLocation.address}</div>
@@ -110,7 +114,11 @@ export default function ContactPage() {
 
                 {/* Téléphone */}
                 <div className="flex items-start gap-3">
-                  <div className="text-blue-600 mt-1">📞</div>
+                  <div className="text-blue-600 mt-1">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                  </div>
                   <div>
                     <div className="font-medium text-slate-900">Téléphone</div>
                     <a
@@ -124,7 +132,12 @@ export default function ContactPage() {
 
                 {/* Email */}
                 <div className="flex items-start gap-3">
-                  <div className="text-blue-600 mt-1">✉️</div>
+                  <div className="text-blue-600 mt-1">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                  </div>
                   <div>
                     <div className="font-medium text-slate-900">Email</div>
                     <a
@@ -141,7 +154,10 @@ export default function ContactPage() {
             {/* Horaires */}
             <div className="bg-white border border-slate-200 rounded-lg p-6">
               <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
-                🕐 Horaires d&apos;ouverture
+                <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                </svg>
+                Horaires d&apos;ouverture
               </h3>
               <div className="space-y-2">
                 {Object.entries(currentLocation.hours).map(([day, hours]) => (
@@ -165,7 +181,9 @@ export default function ContactPage() {
                   href="/rendez-vous"
                   className="flex items-center gap-3 w-full p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
                 >
-                  <span>📅</span>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                  </svg>
                   <span className="font-medium">Prendre rendez-vous</span>
                 </a>
                 
@@ -173,7 +191,9 @@ export default function ContactPage() {
                   href={`tel:${currentLocation.phone}`}
                   className="flex items-center gap-3 w-full p-3 border border-blue-200 text-blue-700 rounded-lg hover:bg-blue-50 transition"
                 >
-                  <span>📞</span>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
                   <span className="font-medium">Appeler maintenant</span>
                 </a>
 
@@ -183,7 +203,9 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 w-full p-3 border border-blue-200 text-blue-700 rounded-lg hover:bg-blue-50 transition"
                 >
-                  <span>🗺️</span>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                  </svg>
                   <span className="font-medium">Itinéraire GPS</span>
                 </a>
               </div>
@@ -195,7 +217,10 @@ export default function ContactPage() {
             <div className="bg-white border border-slate-200 rounded-lg overflow-hidden">
               <div className="bg-slate-50 px-6 py-4 border-b border-slate-200">
                 <h3 className="font-semibold text-slate-900 flex items-center gap-2">
-                  🗺️ Localisation - {currentLocation.name}
+                  <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                  </svg>
+                  Localisation - {currentLocation.name}
                 </h3>
               </div>
               
@@ -244,14 +269,23 @@ export default function ContactPage() {
 
         {/* Informations de transport */}
         <div className="mt-12 bg-slate-50 rounded-lg p-8">
-          <h3 className="text-xl font-semibold text-slate-900 mb-6 text-center">
-            🚇 Comment nous rejoindre
+          <h3 className="text-xl font-semibold text-slate-900 mb-6 text-center flex items-center justify-center gap-2">
+            <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+              <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z" />
+            </svg>
+            Comment nous rejoindre
           </h3>
           
           <div className="grid gap-6 md:grid-cols-3">
             {/* Transports en commun */}
             <div className="text-center">
-              <div className="text-blue-600 text-2xl mb-3">🚇</div>
+              <div className="flex justify-center mb-3">
+                <svg className="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z" />
+                </svg>
+              </div>
               <h4 className="font-medium text-slate-900 mb-2">Transports publics</h4>
               <div className="text-sm text-slate-600">
                 {selectedLocation === "paris" && "Métro ligne 6 - Saint-Jacques"}
@@ -262,7 +296,12 @@ export default function ContactPage() {
 
             {/* Voiture */}
             <div className="text-center">
-              <div className="text-blue-600 text-2xl mb-3">🚗</div>
+              <div className="flex justify-center mb-3">
+                <svg className="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z" />
+                </svg>
+              </div>
               <h4 className="font-medium text-slate-900 mb-2">En voiture</h4>
               <div className="text-sm text-slate-600">
                 Parking gratuit disponible<br />
@@ -272,7 +311,11 @@ export default function ContactPage() {
 
             {/* Accessibilité */}
             <div className="text-center">
-              <div className="text-blue-600 text-2xl mb-3">♿</div>
+              <div className="flex justify-center mb-3">
+                <svg className="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" />
+                </svg>
+              </div>
               <h4 className="font-medium text-slate-900 mb-2">Accessibilité</h4>
               <div className="text-sm text-slate-600">
                 Accès PMR<br />

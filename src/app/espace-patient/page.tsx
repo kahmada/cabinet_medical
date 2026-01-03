@@ -453,20 +453,29 @@ export default function EspacePatientPage() {
 
                       <div className="flex items-center justify-between">
                         <div className="text-sm text-slate-600">
-                          📅 {appointmentDate.toLocaleDateString('fr-FR', {
-                            weekday: 'long',
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric'
-                          })}
-                          <br />
-                          🕐 {appointmentDate.toLocaleTimeString('fr-FR', {
-                            hour: '2-digit',
-                            minute: '2-digit'
-                          })} - {new Date(appointment.slot.end).toLocaleTimeString('fr-FR', {
-                            hour: '2-digit',
-                            minute: '2-digit'
-                          })}
+                          <div className="flex items-center gap-1 mb-1">
+                            <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                            </svg>
+                            {appointmentDate.toLocaleDateString('fr-FR', {
+                              weekday: 'long',
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric'
+                            })}
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                            </svg>
+                            {appointmentDate.toLocaleTimeString('fr-FR', {
+                              hour: '2-digit',
+                              minute: '2-digit'
+                            })} - {new Date(appointment.slot.end).toLocaleTimeString('fr-FR', {
+                              hour: '2-digit',
+                              minute: '2-digit'
+                            })}
+                          </div>
                         </div>
 
                         {isUpcoming && (
@@ -493,9 +502,13 @@ export default function EspacePatientPage() {
               <h2 className="text-xl font-semibold text-slate-900">Paiements & Factures</h2>
               <Link
                 href="/paiement"
-                className="px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 transition inline-block"
+                className="px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 transition inline-block flex items-center gap-2"
               >
-                💳 Nouveau paiement
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                  <path fillRule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clipRule="evenodd" />
+                </svg>
+                Nouveau paiement
               </Link>
             </div>
 
@@ -535,7 +548,12 @@ export default function EspacePatientPage() {
                     </div>
                     <div className="text-right">
                       <div className="font-semibold text-green-700">70,00 €</div>
-                      <div className="text-xs text-green-600">✓ Payé</div>
+                      <div className="text-xs text-green-600 flex items-center gap-1 justify-end">
+                        <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        Payé
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -548,7 +566,12 @@ export default function EspacePatientPage() {
                     </div>
                     <div className="text-right">
                       <div className="font-semibold text-green-700">55,00 €</div>
-                      <div className="text-xs text-green-600">✓ Payé</div>
+                      <div className="text-xs text-green-600 flex items-center gap-1 justify-end">
+                        <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        Payé
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -560,19 +583,28 @@ export default function EspacePatientPage() {
               <h3 className="font-medium text-slate-900 mb-3">Moyens de paiement acceptés</h3>
               <div className="flex gap-4 text-sm text-slate-600">
                 <div className="flex items-center gap-2">
-                  <span className="text-blue-600">💳</span>
+                  <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                    <path fillRule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clipRule="evenodd" />
+                  </svg>
                   Carte bancaire
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-green-600">🏦</span>
+                  <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm7 5a1 1 0 10-2 0v1H8a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V9z" clipRule="evenodd" />
+                  </svg>
                   Virement
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-purple-600">📱</span>
+                  <svg className="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
                   PayPal
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-orange-600">🍎</span>
+                  <svg className="w-4 h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
                   Apple Pay
                 </div>
               </div>
@@ -581,9 +613,14 @@ export default function EspacePatientPage() {
 
           {/* Historique médical */}
           <section className="bg-white border border-slate-200 rounded-lg p-6">
-            <h2 className="text-xl font-semibent text-slate-900 mb-4">Historique Médical</h2>
+            <h2 className="text-xl font-semibold text-slate-900 mb-4">Historique Médical</h2>
             <div className="text-center py-8 text-slate-500">
-              <div className="mb-2">📋</div>
+              <div className="mb-2 flex justify-center">
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                  <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
+                </svg>
+              </div>
               <div>Aucun document disponible</div>
               <div className="text-sm mt-2">
                 Vos comptes-rendus de consultation apparaîtront ici
@@ -616,13 +653,15 @@ export default function EspacePatientPage() {
 
           {/* Services rapides */}
           <div className="bg-white border border-slate-200 rounded-lg p-6">
-            <h3 className="font-semibent text-slate-900 mb-4">Services Rapides</h3>
+            <h3 className="font-semibold text-slate-900 mb-4">Services Rapides</h3>
             <div className="space-y-3">
               <Link
                 href="/rendez-vous"
                 className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
               >
-                <span className="text-blue-600">📅</span>
+                <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                </svg>
                 <div>
                   <div className="font-medium text-sm">Prendre RDV</div>
                   <div className="text-xs text-slate-500">Réserver un créneau</div>
@@ -633,7 +672,9 @@ export default function EspacePatientPage() {
                 href="/chatbot"
                 className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
               >
-                <span className="text-blue-600">🤖</span>
+                <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" />
+                </svg>
                 <div>
                   <div className="font-medium text-sm">Assistant IA</div>
                   <div className="text-xs text-slate-500">Aide aux symptômes</div>
@@ -641,7 +682,9 @@ export default function EspacePatientPage() {
               </Link>
 
               <div className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg opacity-50">
-                <span className="text-slate-400">📄</span>
+                <svg className="w-5 h-5 text-slate-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
+                </svg>
                 <div>
                   <div className="font-medium text-sm text-slate-400">Certificats</div>
                   <div className="text-xs text-slate-400">Bientôt disponible</div>
@@ -652,7 +695,10 @@ export default function EspacePatientPage() {
                 href="/paiement"
                 className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
               >
-                <span className="text-blue-600">💳</span>
+                <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                  <path fillRule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clipRule="evenodd" />
+                </svg>
                 <div>
                   <div className="font-medium text-sm">Paiement en ligne</div>
                   <div className="text-xs text-slate-500">Régler vos consultations</div>
@@ -660,7 +706,9 @@ export default function EspacePatientPage() {
               </Link>
 
               <div className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg opacity-50">
-                <span className="text-slate-400">💬</span>
+                <svg className="w-5 h-5 text-slate-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" />
+                </svg>
                 <div>
                   <div className="font-medium text-sm text-slate-400">Téléconsultation</div>
                   <div className="text-xs text-slate-400">Bientôt disponible</div>
@@ -671,16 +719,26 @@ export default function EspacePatientPage() {
 
           {/* Aide */}
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-            <h3 className="font-semibent text-slate-900 mb-4">Besoin d&apos;aide ?</h3>
+            <h3 className="font-semibold text-slate-900 mb-4">Besoin d&apos;aide ?</h3>
             <div className="space-y-3 text-sm">
-              <Link href="/contact" className="block text-blue-600 hover:text-blue-700">
-                📞 Contacter le cabinet
+              <Link href="/contact" className="flex items-center gap-2 text-blue-600 hover:text-blue-700">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+                Contacter le cabinet
               </Link>
-              <Link href="/urgences" className="block text-blue-600 hover:text-blue-700">
-                🚨 Guide des urgences
+              <Link href="/urgences" className="flex items-center gap-2 text-blue-600 hover:text-blue-700">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                </svg>
+                Guide des urgences
               </Link>
-              <div className="text-slate-600">
-                📧 support@medicare.fr
+              <div className="flex items-center gap-2 text-slate-600">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                support@medicare.fr
               </div>
             </div>
           </div>
