@@ -11,7 +11,7 @@ const navItems = [
   { href: "/contact", label: "Contact" },
   { href: "/urgences", label: "Urgences" },
   { href: "/espace-patient", label: "Espace Patient" },
-  { href: "/paiement", label: "💳 Paiement" },
+  { href: "/paiement", label: "Paiement" },
   { href: "/chatbot", label: "Chatbot IA" },
 ];
 

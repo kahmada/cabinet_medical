@@ -71,7 +71,7 @@ const services = [
         description: "Suivi médical complet des enfants de la naissance à l'adolescence. Prévention, vaccination et traitement des pathologies pédiatriques.",
         price: "60-80€",
         duration: "20-40 min",
-        icon: "👶",
+        icon: "/pd.png",
         procedures: [
             "Consultation pédiatrique",
             "Suivi de croissance",

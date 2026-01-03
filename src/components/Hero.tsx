@@ -11,7 +11,7 @@ export default function Hero() {
 
       <div className="mx-auto max-w-7xl px-6 py-16 md:py-24 grid gap-12 md:grid-cols-2 items-center">
         <div>
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-[#02F3EB]/80" />
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-[#02C4C4]/80" />
           <h1 className="text-3xl md:text-5xl font-semibold tracking-tight text-gra fade-up">
             Votre santé, notre priorité
           </h1>
@@ -39,11 +39,11 @@ export default function Hero() {
         </div>
         <div className="relative">
           <div className="relative aspect-[4/3] w-full max-w-xl mx-auto rounded-xl shadow-lg ring-1 ring-slate-200 overflow-hidden fade-up" style={{animationDelay:'180ms'}}>
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-[#02F3EB]/80" />
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-[#02C4C4]/80" />
             <div className="absolute inset-0 grid place-items-center">
               <div className="text-white text-center">
-                <div className="text-5xl font-semibold">+24</div>
-                <div className="mt-1 text-white/90">Spécialités médicales</div>
+                <div className="text-7xl md:text-8xl font-bold">+24</div>
+                <div className="mt-4 text-xl md:text-2xl font-medium text-white/95">Spécialités médicales</div>
               </div>
             </div>
           </div>

@@ -85,7 +85,7 @@ const navItems = [
     },
     {
         href: "/paiement",
-        label: "💳 Paiement"
+        label: "Paiement"
     },
     {
         href: "/chatbot",
