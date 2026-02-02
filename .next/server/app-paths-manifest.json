@@ -1,14 +1,17 @@
 {
+  "/api/appointments/my/route": "app/api/appointments/my/route.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/auth/me/route": "app/api/auth/me/route.js",
+  "/api/auth/register/route": "app/api/auth/register/route.js",
+  "/api/chat/route": "app/api/chat/route.js",
   "/api/doctors/route": "app/api/doctors/route.js",
   "/api/locations/route": "app/api/locations/route.js",
   "/api/specialties/route": "app/api/specialties/route.js",
   "/chatbot/page": "app/chatbot/page.js",
-  "/contact/page": "app/contact/page.js",
   "/espace-patient/page": "app/espace-patient/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/medecins/page": "app/medecins/page.js",
   "/page": "app/page.js",
   "/paiement/page": "app/paiement/page.js",
-  "/rendez-vous/page": "app/rendez-vous/page.js",
-  "/services/page": "app/services/page.js",
-  "/urgences/page": "app/urgences/page.js"
+  "/rendez-vous/page": "app/rendez-vous/page.js"
 }

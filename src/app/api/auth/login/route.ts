@@ -1,4 +1,5 @@
 import { prisma } from "@/lib/prisma";
+import { createSession, setSessionCookie } from "@/lib/session";
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import bcrypt from "bcryptjs";
@@ -32,6 +33,8 @@ export async function POST(req: NextRequest) {
         lastName: true,
         phone: true,
         password: true,
+        role: true,
+        isActive: true,
         createdAt: true,
       }
     });
@@ -42,6 +45,12 @@ export async function POST(req: NextRequest) {
       }, { status: 401 });
     }
 
+    if (!patient.isActive) {
+      return NextResponse.json({ 
+        error: "Compte désactivé. Contactez l'administrateur." 
+      }, { status: 403 });
+    }
+
     // Vérifier le mot de passe
     const passwordMatch = await bcrypt.compare(password, patient.password);
     
@@ -50,6 +59,10 @@ export async function POST(req: NextRequest) {
         error: "Email ou mot de passe incorrect" 
       }, { status: 401 });
     }
+
+    // Créer une session
+    const token = await createSession(patient.id);
+    await setSessionCookie(token);
 
     // Retourner les données patient sans le mot de passe
     const { password: _, ...patientData } = patient;
